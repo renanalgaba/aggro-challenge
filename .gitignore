@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios de log
+logs
+*.log
+logs/*
+
+# Ambiente
+.env
+
+# Docker
+docker-compose.override.yml
+docker-compose.override.yaml
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# MacOS arquivos temporários
+.DS_Store
+
+# Linux arquivos temporários
+*.swp
+
+# Test coverage
+coverage/
+*.lcov
+
+# Configurações do TypeScript
+dist/
+out/
+tsconfig.tsbuildinfo
+
+# Configurações de compilação e pacotes
+build/
