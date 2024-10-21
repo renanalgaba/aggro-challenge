@@ -12,7 +12,7 @@ export class ProdutorRural {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({ length: 14 })
+  @Column({ type: 'varchar', length: 14 })
   @IsString()
   @Matches(/^\d+$/, { message: 'O documento deve conter apenas números.' })
   @Length(11, 14, {
@@ -20,28 +20,28 @@ export class ProdutorRural {
   })
   documento: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 255 })
   nome: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 255 })
   nomeFazenda: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 255 })
   cidade: string;
 
-  @Column()
+  @Column({ type: 'varchar', length: 2 })
   estado: string;
 
-  @Column('float')
+  @Column({ type: 'float' })
   areaTotal: number;
 
-  @Column('float')
+  @Column({ type: 'float' })
   areaAgricultavel: number;
 
-  @Column('float')
+  @Column({ type: 'float' })
   areaVegetacao: number;
 
-  @Column('simple-array')
+  @Column({ type: 'simple-array' })
   culturas: string[];
 
   @BeforeInsert()
